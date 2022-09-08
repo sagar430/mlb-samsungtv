@@ -107,6 +107,24 @@ When('I go to Games from Home', async function() {
   await browser.pause(5000)
 })
 
+When('I go to GetMlbTv from Home', async function() {
+  //up
+  await browser.pause(3000)
+  await browser.keys("\ue013")
+  //right
+  await browser.pause(1000)
+  await browser.keys("\ue014")
+  await browser.pause(1000)
+  await browser.keys("\ue014")
+  await browser.pause(1000)
+  await browser.keys("\ue014")
+  //return
+  await browser.pause(1000)
+  await browser.keys("\ue006")
+  await browser.pause(5000)
+})
+
+
 When('I go to previous date from Games', async function() {
   //up
   await browser.pause(1000)

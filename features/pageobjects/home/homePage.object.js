@@ -1,5 +1,5 @@
 import {locators,generic} from '../../../index'
-const {getById, getByCss} = locators
+const {getById, getByCss, getByXpath} = locators
 
 const pageObjects = {
 
@@ -25,6 +25,10 @@ const pageObjects = {
   'BaseballZenFirstTileLockIcon': getByCss("#baseball-zen-video-list-list>div:nth-child(1) svg[class^='LockIcon']"),
   'TopGamesOfFirstTileLockIcon': getByCss("#mlb-tv-archived-games-video-list-list>div:nth-child(1) svg[class^='LockIcon']"),
   
+  //Home Page Get Mlb Tv Btn
+  'HomePageGetMlbTvBtn': getByXpath("//*[@id='paywall-button' and @aria-label='Get MLB.TV']"),
+  
+
 }
 
 module.exports =  class homePage extends generic {

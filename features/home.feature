@@ -9,4 +9,9 @@ Feature: Home
     And I press Back
     And I press Back
     And I wait for sometime
+
+   @homePageGetMlbTv
+  Scenario: As a user, I can validate Get Mlb Tv Function Properly
+    Given I go to the "home" page
+    When I go to GetMlbTv from Home
     
