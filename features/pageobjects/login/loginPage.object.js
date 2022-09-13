@@ -17,6 +17,8 @@ const pageObjects = {
   'Terms of use': getByXpath("//*[contains(@class,'site-footer__legal-link') and text()='Terms of Use'] "),
   // 'carousel': getByXpath("//*[text()='Featured on MLB.TV']/..//li[1]"),
   'carousel': getById("react-footer"),
+
+  'VerifyAccountCreatedMsg': getByXpath("//*[@class='filler'] //*[@class='mlb-form-content'] //*[@class='mlb-form-error-message' and contains(text(), 'An account has already been created with that email address')]"),
 }
 module.exports = class loginPage extends generic {
   constructor() {

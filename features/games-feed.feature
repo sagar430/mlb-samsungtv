@@ -1,6 +1,6 @@
 Feature: Games Feed
 
-  @gamesFeed
+  @gamesFeed 
   Scenario: As a user, I can select game tiles from home page
     Given I go to the "home" page
     When I go to Games from Home
@@ -8,14 +8,14 @@ Feature: Games Feed
     Then I wait for "GamesTabFirstTile" to be displayed
     And I go to next date from Games
     And I wait for sometime
-    And I click on "GamesTabFirstTile"
+    And I click on "GamesTabSecondTile"
     And I wait for "GamesFeedModalTodayEarlyAwayTeamLogo" to be displayed
     And I wait for "GamesFeedModalTodayEarlyHomeTeamLogo" to be displayed
     And I wait for "GamesFeedModalTodayEarlySignalIcon" to be displayed
     And I wait for "GamesFeedModalTodayEarlyYoureEarlyMsg" to be displayed
     And I wait for "GamesFeedModalTodayEarlyNoFeedsTxt" to be displayed
     
-    @gamesFeedPrevious
+    @gamesFeedPrevious 
   Scenario: As a user, I can select game tiles from home page
     Given I go to the "home" page
     When I go to Games from Home
@@ -23,7 +23,7 @@ Feature: Games Feed
     Then I wait for "GamesTabFirstTile" to be displayed
     And I go to previous date from Games
     And I wait for sometime
-    And I click on "GamesTabFirstTile"
+    And I click on "GamesTabSecondTile"
     And I wait for "GamesFeedModalYesterdayAwayTeamLogo" to be displayed
     And I wait for "GamesFeedModalYesterdayHomeTeamLogo" to be displayed
     And I wait for "GamesFeedModalYesterdayTitle" to be displayed
