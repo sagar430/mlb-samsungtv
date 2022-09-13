@@ -1,6 +1,9 @@
 Feature: Games
 
-  @gamestile
+#not able to fix, xpaths giving problem for each step, even after correction 
+#because they are constantly changing according to game status on website.  Xpaths
+#change along with game status (example=archive to live)
+  @gamestile @test3
   Scenario: As a user, I can select game tiles from home page
     Given I go to the "home" page
     When I go to Games from Home
