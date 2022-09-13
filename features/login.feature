@@ -12,13 +12,28 @@ Feature: Login
     And I press down twice
     And I press Enter
     And I wait for some more time
-    # Then I wait for "VerifyAccountCreatedMsg" to be displayed
+    Then I wait for "VerifyAccountCreatedSuccesfullyMsg" to be displayed
+    When I wait for sometime
+    And I press Enter
+    And I wait for sometime
+    And I go to Games from Home
+    And I wait for sometime
+    And I press up key
+    And I press Enter
+    And I wait for sometime
+    And I click on "GameFirstFreeTile"
+    And I wait for sometime
+    Then I wait for "GameFeedModalAwayTeam" to be displayed
+    # Then I wait for "VerifyFirstFreeGameTile" to be displayed
+    # Then I wait for "VerifyAccountAlreadyCreatedMsg" to be displayed
+    # Then I wait for "VerifyInvalidPasswordMsg" to be displayed
+    # Then I wait for "VerifyInvalidEmailMsg" to be displayed
+    # Then I wait for "VerifyCreateBtnIsHidden" to be displayed
     
   Examples:
       | Username           | Password       |
-      | Loser User        | password       |
-      | Loser User        | password       |
-      | Loser User        | password       |
+      | Loser User        | password4       |
+      
 
   @login
   Scenario Outline: As a user, I can login with "<Username>" and logout successfully
