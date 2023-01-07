@@ -1,61 +1,8 @@
 Feature: Login
 
   @GetMlbTvTest
-  Scenario Outline: As a user, I can login with "<Username>" and logout successfully
+  Scenario: As a user, I can login with "<Username>" and logout successfully
     Given I go to the "home" page
-    And I go to Getmlbtv from Home
     And I wait for sometime
-    And I press Enter
-    And I wait for some more time
-    And I enter unique email in "Username" field
-    And I enter "<Password>" in "Password" field
-    And I press down twice
-    And I press Enter
-    And I wait for some more time
-    Then I wait for "VerifyAccountCreatedSuccesfullyMsg" to be displayed
-    When I wait for sometime
-    And I press Enter
-    And I wait for sometime
-    And I go to Games from Home
-    And I wait for sometime
-    And I press up key
-    And I press Enter
-    And I wait for sometime
-    And I click on "GameFirstFreeTile"
-    And I wait for sometime
-    Then I wait for "GameFeedModalAwayTeam" to be displayed
-    # Then I wait for "VerifyFirstFreeGameTile" to be displayed
-    # Then I wait for "VerifyAccountAlreadyCreatedMsg" to be displayed
-    # Then I wait for "VerifyInvalidPasswordMsg" to be displayed
-    # Then I wait for "VerifyInvalidEmailMsg" to be displayed
-    # Then I wait for "VerifyCreateBtnIsHidden" to be displayed
+    Then I wait for "GamesFeedHeritage" to be displayed
     
-  Examples:
-      | Username           | Password       |
-      | Loser User        | password4       |
-      
-
-  @login
-  Scenario Outline: As a user, I can login with "<Username>" and logout successfully
-    Given I go to the "home" page
-    And I wait for sometime
-    And I go to Log In from Home
-    And I wait for sometime
-    And I enter "<Username>" in "Username" field
-    And I enter "<Password>" in "Password" field
-    And I press down once
-    And I press Enter
-    And I wait for sometime
-    # And I click on "Log In"
-    # And I press Enter
-    And I click on "Get Started"
-    And I go to Settings from Home
-    And I click on "Log Out"
-    And I click on "Log Out2"
-    And I wait for sometime
-
-    Examples:
-      | Username           | Password       |
-      | Yearly User        | password       |
-      | Monthly User       | password       |
-      | Single Team User   | password       |

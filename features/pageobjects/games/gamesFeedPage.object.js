@@ -11,6 +11,7 @@ const pageObjects = {
   'GamesFeedModalTodayEarlySignalIcon': getByXpath("//*[@class='feed-selector-feeds'] //*[@class='feed-select-content'] //*[@class='SignalIcon-sc-1y5ug8c-0 ddRjdt no-feeds-icon']"),
   'GamesFeedModalTodayEarlyYoureEarlyMsg': getByXpath("//*[@class='feed-selector-feeds'] //*[@class='feed-select-content'] //*[@class='no-feeds-early' and contains(text(), 'a bit early!')]"),
   'GamesFeedModalTodayEarlyNoFeedsTxt': getByXpath("//*[@class='feed-selector-feeds'] //*[@class='feed-select-content'] //*[@class='no-feeds-text' and contains(text(), 'There are no feeds available yet')]"),
+  'GamesFeedHeritage': getByXpath("//div[@class= 'top'] //div[@class= 'logo animate']"),
 
   //Games Feed Modal September 7 Free Game of Day Modal
   'GamesFeedModalTodayFreeAwayTeamLogo': getByXpath("//*[@class='feed-selector-feeds'] //*[@class='feed-select-header-main-container'] //*[@class='feed-select-header-team away']"),
